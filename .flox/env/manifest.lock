@@ -430,25 +430,25 @@
     {
       "attr_path": "vhs",
       "broken": false,
-      "derivation": "/nix/store/q4jbsisr8q9s3qd3f37m90v4mv5kxw28-vhs-unknown.drv",
-      "description": "Not Provided",
+      "derivation": "/nix/store/7nngrmfhfawkf6xbrzsv8z3vxmp5sa2c-vhs-0.0.1.drv",
+      "description": "test publish",
       "install_id": "tomberek/vhs",
-      "locked_url": "git@github.com:tomberek/vhs?rev=691a6c7084e690e959776529d48e258152f41282",
-      "name": "vhs-unknown",
+      "locked_url": "git@github.com:tomberek/vhs?rev=e3caf7656f52148e02b4e00b4d437d04d905b529",
+      "name": "vhs-0.0.1",
       "pname": "vhs",
-      "rev": "691a6c7084e690e959776529d48e258152f41282",
-      "rev_count": 700,
-      "rev_date": "2025-03-19T19:39:09Z",
-      "scrape_date": "2025-03-28T23:02:43.603858472Z",
+      "rev": "e3caf7656f52148e02b4e00b4d437d04d905b529",
+      "rev_count": 701,
+      "rev_date": "2025-03-29T00:05:03Z",
+      "scrape_date": "2025-03-29T00:23:29.577938610Z",
       "stabilities": [
         "unstable"
       ],
-      "version": "unknown",
+      "version": "0.0.1",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/zhnsyz6mf63lbvczihs7n8v818284nm0-vhs-unknown"
+        "out": "/nix/store/pcgcl7vwdbnng9dls41g1yi53yxg7l3q-vhs-0.0.1"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
