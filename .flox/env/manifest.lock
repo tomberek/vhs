@@ -11,6 +11,12 @@
       },
       "python3": {
         "pkg-path": "python3"
+      },
+      "tomberek/vhs": {
+        "pkg-path": "tomberek/vhs",
+        "systems": [
+          "x86_64-linux"
+        ]
       }
     },
     "vars": {
@@ -31,7 +37,9 @@
     },
     "build": {
       "vhs": {
-        "command": "go mod tidy\ngo build .\nmkdir -p $out/bin\nmv vhs $out/bin/.\n"
+        "command": "go mod tidy\ngo build .\nmkdir -p $out/bin\nmv vhs $out/bin/.\n",
+        "version": "0.0.1",
+        "description": "test publish"
       }
     }
   },
@@ -409,6 +417,33 @@
       "outputs": {
         "debug": "/nix/store/yg7pavnh3hhw0lwfm9c4jr9yi3rq8h4r-python3-3.12.8-debug",
         "out": "/nix/store/qrc496n6fsqp4p5m5h8wmw5d5jwyw5mr-python3-3.12.8"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "vhs",
+      "broken": false,
+      "derivation": "/nix/store/q4jbsisr8q9s3qd3f37m90v4mv5kxw28-vhs-unknown.drv",
+      "description": "Not Provided",
+      "install_id": "tomberek/vhs",
+      "locked_url": "git@github.com:tomberek/vhs?rev=691a6c7084e690e959776529d48e258152f41282",
+      "name": "vhs-unknown",
+      "pname": "vhs",
+      "rev": "691a6c7084e690e959776529d48e258152f41282",
+      "rev_count": 700,
+      "rev_date": "2025-03-19T19:39:09Z",
+      "scrape_date": "2025-03-28T23:02:43.603858472Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "version": "unknown",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/zhnsyz6mf63lbvczihs7n8v818284nm0-vhs-unknown"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
