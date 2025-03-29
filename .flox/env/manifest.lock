@@ -40,6 +40,11 @@
         "command": "go mod tidy\ngo build .\nmkdir -p $out/bin\nmv vhs $out/bin/.\n",
         "version": "0.0.1",
         "description": "test publish"
+      },
+      "vhss": {
+        "command": "go mod tidy\ngo build .\nmkdir -p $out/bin\nmv vhs $out/bin/.\n",
+        "version": "0.0.1",
+        "description": "test publish"
       }
     }
   },

@@ -36,6 +36,14 @@ alias l="ls -alh"
 myservice.command = "python3 -m http.server"
 
 [build]
+vhss.description = "test publish"
+vhss.version = "0.0.1"
+vhss.command = '''
+go mod tidy
+go build .
+mkdir -p $out/bin
+mv vhs $out/bin/.
+'''
 vhs.description = "test publish"
 vhs.version = "0.0.1"
 vhs.command = '''
