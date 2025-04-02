@@ -12,11 +12,8 @@
       "python3": {
         "pkg-path": "python3"
       },
-      "tomberek/vhs": {
-        "pkg-path": "tomberek/vhs",
-        "systems": [
-          "x86_64-linux"
-        ]
+      "ttyd": {
+        "pkg-path": "ttyd"
       }
     },
     "vars": {
@@ -42,7 +39,7 @@
         "description": "test publish"
       },
       "vhss": {
-        "command": "go mod tidy\ngo build .\nmkdir -p $out/bin\nmv vhs $out/bin/.\n",
+        "command": "go mod tidy\ngo build .\necho DO SOMETHING ELSE\nmkdir -p $out/bin\nmv vhs $out/bin/.\n",
         "version": "0.0.1",
         "description": "test publish"
       }
@@ -52,34 +49,34 @@
     {
       "attr_path": "ffmpeg",
       "broken": false,
-      "derivation": "/nix/store/xzjd43ajkd1xnszbbz08w7vxhd8l0yk3-ffmpeg-7.1.drv",
+      "derivation": "/nix/store/qqnk39j9rq5jms8mzz2b0iq4kl36i1a7-ffmpeg-7.1.1.drv",
       "description": "Complete, cross-platform solution to record, convert and stream audio and video",
       "install_id": "ffmpeg",
       "license": "[ LGPL-2.1-or-later, GPL-2.0-or-later, LGPL-3.0-or-later, GPL-3.0-or-later ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "name": "ffmpeg-7.1",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5e5402ecbcb27af32284d4a62553c019a3a49ea6",
+      "name": "ffmpeg-7.1.1",
       "pname": "ffmpeg",
-      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "rev_count": 744133,
-      "rev_date": "2025-01-26T09:59:49Z",
-      "scrape_date": "2025-01-27T03:28:00Z",
+      "rev": "5e5402ecbcb27af32284d4a62553c019a3a49ea6",
+      "rev_count": 775060,
+      "rev_date": "2025-03-27T17:14:43Z",
+      "scrape_date": "2025-03-29T01:10:05.532871Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "7.1",
+      "version": "7.1.1",
       "outputs_to_install": [
         "bin",
         "man"
       ],
       "outputs": {
-        "bin": "/nix/store/3vyh51l0zwbx7337injvmw2kz7v5x0jm-ffmpeg-7.1-bin",
-        "data": "/nix/store/ckgsf3gazzyly59p2jjzaxglmg2igsmk-ffmpeg-7.1-data",
-        "dev": "/nix/store/y564pd4kqaq00jwqjfxc6mxmpimb22a0-ffmpeg-7.1-dev",
-        "doc": "/nix/store/cf3lhdlydyww2m4ip8x6f2wb855wp4hz-ffmpeg-7.1-doc",
-        "lib": "/nix/store/dkwl6m0wxbl334j2pdw1qx1dyi298qx1-ffmpeg-7.1-lib",
-        "man": "/nix/store/arf0gsxx4821rdiw002ybb0d7423kywv-ffmpeg-7.1-man",
-        "out": "/nix/store/87z39c3p7pq3y85rf30f17kivhmgz5vp-ffmpeg-7.1"
+        "bin": "/nix/store/pijzl7w8sk2ynkbfjahrn3y18n0fa1a8-ffmpeg-7.1.1-bin",
+        "data": "/nix/store/5ycg65w1cjd769j0k8i3d95jqijn6r9q-ffmpeg-7.1.1-data",
+        "dev": "/nix/store/shr80pw02b4bl6ivxd2b9594xk00hb6c-ffmpeg-7.1.1-dev",
+        "doc": "/nix/store/6wlifnki53phlzslpizi7w0gq9cdnd5j-ffmpeg-7.1.1-doc",
+        "lib": "/nix/store/2q2raxa5l13fia3i9vzja84kpy635cbh-ffmpeg-7.1.1-lib",
+        "man": "/nix/store/fkxf65f4pd87x1nbmjlrqm01i4i6fvn2-ffmpeg-7.1.1-man",
+        "out": "/nix/store/srsk9w1990dpahhamxcvi14bs4v50d1w-ffmpeg-7.1.1"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -88,34 +85,34 @@
     {
       "attr_path": "ffmpeg",
       "broken": false,
-      "derivation": "/nix/store/14jl9xjgplml1ybmadjjgix9syzs6wvv-ffmpeg-7.1.drv",
+      "derivation": "/nix/store/g30d2nrg10dpcm0c5k3q13dc6r0a0y21-ffmpeg-7.1.1.drv",
       "description": "Complete, cross-platform solution to record, convert and stream audio and video",
       "install_id": "ffmpeg",
       "license": "[ LGPL-2.1-or-later, GPL-2.0-or-later, LGPL-3.0-or-later, GPL-3.0-or-later ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "name": "ffmpeg-7.1",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5e5402ecbcb27af32284d4a62553c019a3a49ea6",
+      "name": "ffmpeg-7.1.1",
       "pname": "ffmpeg",
-      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "rev_count": 744133,
-      "rev_date": "2025-01-26T09:59:49Z",
-      "scrape_date": "2025-01-27T03:28:00Z",
+      "rev": "5e5402ecbcb27af32284d4a62553c019a3a49ea6",
+      "rev_count": 775060,
+      "rev_date": "2025-03-27T17:14:43Z",
+      "scrape_date": "2025-03-29T01:27:29.240577Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "7.1",
+      "version": "7.1.1",
       "outputs_to_install": [
         "bin",
         "man"
       ],
       "outputs": {
-        "bin": "/nix/store/2rhkdzk1rc0szq16fkfdcnx04waxmw1z-ffmpeg-7.1-bin",
-        "data": "/nix/store/9s4qs5s51d0djwf5svnhysrdx9syw6lm-ffmpeg-7.1-data",
-        "dev": "/nix/store/ll82ccgd5nq9hgdx8cybrma8252z27mx-ffmpeg-7.1-dev",
-        "doc": "/nix/store/f2fkpjpn8n9j33k888zfg3qafm401dlb-ffmpeg-7.1-doc",
-        "lib": "/nix/store/9xpjqrhv5v4gs18sn3dlppp1ccp3kbxp-ffmpeg-7.1-lib",
-        "man": "/nix/store/02m3gr4mnrips1laqbyb016jlrsdf5an-ffmpeg-7.1-man",
-        "out": "/nix/store/vg5p8gamyyqhqyncpxrpj2adry6pc58g-ffmpeg-7.1"
+        "bin": "/nix/store/zi3ahf2v7cvpz5c5x7p7yazaa795qca1-ffmpeg-7.1.1-bin",
+        "data": "/nix/store/m773h2mjxcvb8sxsjrd9q6gihnhi997f-ffmpeg-7.1.1-data",
+        "dev": "/nix/store/mklkaaf314x31g3ynw62xk04lj4y629f-ffmpeg-7.1.1-dev",
+        "doc": "/nix/store/l2f93x44m3ywkb5zfd354f2di28alykb-ffmpeg-7.1.1-doc",
+        "lib": "/nix/store/2542lds1lhmx27zg8kyyf8xf7vn6fhm9-ffmpeg-7.1.1-lib",
+        "man": "/nix/store/3pd0aks6a9ig7jmiclay1rhd4i4f6xv9-ffmpeg-7.1.1-man",
+        "out": "/nix/store/9jrmzxf0swsa6pqw9n040xlm1g2bbacn-ffmpeg-7.1.1"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -124,34 +121,34 @@
     {
       "attr_path": "ffmpeg",
       "broken": false,
-      "derivation": "/nix/store/9j7ymsbf1irqs047m77v9prxh5jngvd2-ffmpeg-7.1.drv",
+      "derivation": "/nix/store/lbrbi844c760izmxrdrbnz2djbqnm41y-ffmpeg-7.1.1.drv",
       "description": "Complete, cross-platform solution to record, convert and stream audio and video",
       "install_id": "ffmpeg",
       "license": "[ LGPL-2.1-or-later, GPL-2.0-or-later, LGPL-3.0-or-later, GPL-3.0-or-later ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "name": "ffmpeg-7.1",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5e5402ecbcb27af32284d4a62553c019a3a49ea6",
+      "name": "ffmpeg-7.1.1",
       "pname": "ffmpeg",
-      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "rev_count": 744133,
-      "rev_date": "2025-01-26T09:59:49Z",
-      "scrape_date": "2025-01-27T03:28:00Z",
+      "rev": "5e5402ecbcb27af32284d4a62553c019a3a49ea6",
+      "rev_count": 775060,
+      "rev_date": "2025-03-27T17:14:43Z",
+      "scrape_date": "2025-03-29T01:42:40.296275Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "7.1",
+      "version": "7.1.1",
       "outputs_to_install": [
         "bin",
         "man"
       ],
       "outputs": {
-        "bin": "/nix/store/038sbz31vq1fc6kv3bjqjlld2i8fva5a-ffmpeg-7.1-bin",
-        "data": "/nix/store/vii4bma2bqbg3cm526dh1qxms497rssr-ffmpeg-7.1-data",
-        "dev": "/nix/store/759rmkjky135w4n5xskgpfnnz8lmdzv6-ffmpeg-7.1-dev",
-        "doc": "/nix/store/qnds6da30fdakrlb4xcx0zxbgy4sgy7l-ffmpeg-7.1-doc",
-        "lib": "/nix/store/c9wzw98xlnhz371h7qyzn1gkkm22k0c8-ffmpeg-7.1-lib",
-        "man": "/nix/store/lwcyd2jzjhn568n8vhxj3v4cz9mgiqvy-ffmpeg-7.1-man",
-        "out": "/nix/store/wp9inha2y7g4k2slyrk7da1j4wd8b6rr-ffmpeg-7.1"
+        "bin": "/nix/store/3dkll7ypk49z0w58zgb3mhv9z0r2dz24-ffmpeg-7.1.1-bin",
+        "data": "/nix/store/4dkwapsb2kxz87hxd8wyv7fg4nhv5168-ffmpeg-7.1.1-data",
+        "dev": "/nix/store/8af5617pc1wxykb016x24fsgar0b2ahw-ffmpeg-7.1.1-dev",
+        "doc": "/nix/store/j4lmf1qbls05wrnl4v25nb92yrab8a91-ffmpeg-7.1.1-doc",
+        "lib": "/nix/store/hzw4x9yw9k2y858d420ls3d5rmp69k3j-ffmpeg-7.1.1-lib",
+        "man": "/nix/store/cwy10kzivcyxdw4jvpqcjim0v45wbafi-ffmpeg-7.1.1-man",
+        "out": "/nix/store/41z63lia5qmj99iivpv9d99sfi3i5jg6-ffmpeg-7.1.1"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -160,34 +157,34 @@
     {
       "attr_path": "ffmpeg",
       "broken": false,
-      "derivation": "/nix/store/y2pr5nl82k7q7bzjqkv63qj67yxcn1xn-ffmpeg-7.1.drv",
+      "derivation": "/nix/store/xl34gzfbhrh7mhfv0ir8lyp28h2ws5n3-ffmpeg-7.1.1.drv",
       "description": "Complete, cross-platform solution to record, convert and stream audio and video",
       "install_id": "ffmpeg",
       "license": "[ LGPL-2.1-or-later, GPL-2.0-or-later, LGPL-3.0-or-later, GPL-3.0-or-later ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "name": "ffmpeg-7.1",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5e5402ecbcb27af32284d4a62553c019a3a49ea6",
+      "name": "ffmpeg-7.1.1",
       "pname": "ffmpeg",
-      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "rev_count": 744133,
-      "rev_date": "2025-01-26T09:59:49Z",
-      "scrape_date": "2025-01-27T03:28:00Z",
+      "rev": "5e5402ecbcb27af32284d4a62553c019a3a49ea6",
+      "rev_count": 775060,
+      "rev_date": "2025-03-27T17:14:43Z",
+      "scrape_date": "2025-03-29T02:01:05.971286Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "7.1",
+      "version": "7.1.1",
       "outputs_to_install": [
         "bin",
         "man"
       ],
       "outputs": {
-        "bin": "/nix/store/38na74whzaxfcj4zarz15kngn8gdw61n-ffmpeg-7.1-bin",
-        "data": "/nix/store/vh57iqizwcqz82bbgsaqhyy46jmf8jvn-ffmpeg-7.1-data",
-        "dev": "/nix/store/mviia480ziysq9hl49avk00k4ya7z34b-ffmpeg-7.1-dev",
-        "doc": "/nix/store/bk7fyl5xi2g40sw4qzk9sr82jgnm2v33-ffmpeg-7.1-doc",
-        "lib": "/nix/store/bglv1mbxf9n4s3qxpgwqzka6r58fxzy5-ffmpeg-7.1-lib",
-        "man": "/nix/store/pghgbcsc8ydgqb8gcy9h3vdjhpnznkj5-ffmpeg-7.1-man",
-        "out": "/nix/store/jfqdkx73z5nnqf5w5l6yi37myk7zfnb9-ffmpeg-7.1"
+        "bin": "/nix/store/gjzf3dca4v804mx46z1xnr2vqmi8r90n-ffmpeg-7.1.1-bin",
+        "data": "/nix/store/fcw9rgcrlx81vv71ygj4gmi0x6fncwpp-ffmpeg-7.1.1-data",
+        "dev": "/nix/store/3002w5flrcflzhjy353kjjgmssw7py7x-ffmpeg-7.1.1-dev",
+        "doc": "/nix/store/ml301rkwb57afnb1bfyilf0hgbjrng3i-ffmpeg-7.1.1-doc",
+        "lib": "/nix/store/pg0bn822q72sy52ws98ks9c6w1k6s2sp-ffmpeg-7.1.1-lib",
+        "man": "/nix/store/6pj3ngc7l3i701bi8ivg69i2456wa0ds-ffmpeg-7.1.1-man",
+        "out": "/nix/store/776zq7f0x4039p76lrcakv33knsymais-ffmpeg-7.1.1"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -196,27 +193,27 @@
     {
       "attr_path": "go",
       "broken": false,
-      "derivation": "/nix/store/wxyw1f7wzna38gbdqxsb7h02jn3jx19b-go-1.23.4.drv",
+      "derivation": "/nix/store/p823p8i547lj7yp3yr2b5i12a4wnwby6-go-1.24.1.drv",
       "description": "Go Programming language",
       "install_id": "go",
       "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "name": "go-1.23.4",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5e5402ecbcb27af32284d4a62553c019a3a49ea6",
+      "name": "go-1.24.1",
       "pname": "go",
-      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "rev_count": 744133,
-      "rev_date": "2025-01-26T09:59:49Z",
-      "scrape_date": "2025-01-27T03:28:00Z",
+      "rev": "5e5402ecbcb27af32284d4a62553c019a3a49ea6",
+      "rev_count": 775060,
+      "rev_date": "2025-03-27T17:14:43Z",
+      "scrape_date": "2025-03-29T01:10:05.744522Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "1.23.4",
+      "version": "1.24.1",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/lg7l1czmd5hqwwhjszprdz342q98zmkw-go-1.23.4"
+        "out": "/nix/store/jp3z5jp9gaxsw7fdzbqn29aabmrxq62j-go-1.24.1"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -225,27 +222,27 @@
     {
       "attr_path": "go",
       "broken": false,
-      "derivation": "/nix/store/y7am8b10cml7y41lihnaafc2gdagkdis-go-1.23.4.drv",
+      "derivation": "/nix/store/5difmnrawi0hf4a7vsz0my25ivf34khi-go-1.24.1.drv",
       "description": "Go Programming language",
       "install_id": "go",
       "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "name": "go-1.23.4",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5e5402ecbcb27af32284d4a62553c019a3a49ea6",
+      "name": "go-1.24.1",
       "pname": "go",
-      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "rev_count": 744133,
-      "rev_date": "2025-01-26T09:59:49Z",
-      "scrape_date": "2025-01-27T03:28:00Z",
+      "rev": "5e5402ecbcb27af32284d4a62553c019a3a49ea6",
+      "rev_count": 775060,
+      "rev_date": "2025-03-27T17:14:43Z",
+      "scrape_date": "2025-03-29T01:27:29.838357Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "1.23.4",
+      "version": "1.24.1",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/2x7k6yj9z37s3d3x5j3kkz6bcak8k9qr-go-1.23.4"
+        "out": "/nix/store/6zvrmsmdg7p8yw3vii20g40b4zsh6kjr-go-1.24.1"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -254,27 +251,27 @@
     {
       "attr_path": "go",
       "broken": false,
-      "derivation": "/nix/store/z0dz4h31vdacqxdgpzdiyp1xbfpda53x-go-1.23.4.drv",
+      "derivation": "/nix/store/992wk5rpadggrac2hyv44w4wvw4gpmxl-go-1.24.1.drv",
       "description": "Go Programming language",
       "install_id": "go",
       "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "name": "go-1.23.4",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5e5402ecbcb27af32284d4a62553c019a3a49ea6",
+      "name": "go-1.24.1",
       "pname": "go",
-      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "rev_count": 744133,
-      "rev_date": "2025-01-26T09:59:49Z",
-      "scrape_date": "2025-01-27T03:28:00Z",
+      "rev": "5e5402ecbcb27af32284d4a62553c019a3a49ea6",
+      "rev_count": 775060,
+      "rev_date": "2025-03-27T17:14:43Z",
+      "scrape_date": "2025-03-29T01:42:40.534698Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "1.23.4",
+      "version": "1.24.1",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/8x0ag0v37rfy9z58a8yy3hakj3dzdr9c-go-1.23.4"
+        "out": "/nix/store/2bcic1xcha2k11djynr488v3pg0nnghr-go-1.24.1"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -283,27 +280,27 @@
     {
       "attr_path": "go",
       "broken": false,
-      "derivation": "/nix/store/slfvv9mfnws111d0lr35zgizm7y0k4mb-go-1.23.4.drv",
+      "derivation": "/nix/store/xj7x9f9c6z1wc7b7hpy8k3w65vb6lfi5-go-1.24.1.drv",
       "description": "Go Programming language",
       "install_id": "go",
       "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "name": "go-1.23.4",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5e5402ecbcb27af32284d4a62553c019a3a49ea6",
+      "name": "go-1.24.1",
       "pname": "go",
-      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "rev_count": 744133,
-      "rev_date": "2025-01-26T09:59:49Z",
-      "scrape_date": "2025-01-27T03:28:00Z",
+      "rev": "5e5402ecbcb27af32284d4a62553c019a3a49ea6",
+      "rev_count": 775060,
+      "rev_date": "2025-03-27T17:14:43Z",
+      "scrape_date": "2025-03-29T02:01:06.669670Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "1.23.4",
+      "version": "1.24.1",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/0b6vsy4fa4i4qpk1011hi6251nwdg5y8-go-1.23.4"
+        "out": "/nix/store/g29rrn8qqlg4yjqv543ryrkimr7fk43h-go-1.24.1"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -312,27 +309,27 @@
     {
       "attr_path": "python3",
       "broken": false,
-      "derivation": "/nix/store/fl940lg3mxbaipy5zx7wcd952yclnkg5-python3-3.12.8.drv",
+      "derivation": "/nix/store/cb1gsjqlf1dzry390xrsl6ghpaqmsaxd-python3-3.12.9.drv",
       "description": "High-level dynamically-typed programming language",
       "install_id": "python3",
       "license": "Python-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "name": "python3-3.12.8",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5e5402ecbcb27af32284d4a62553c019a3a49ea6",
+      "name": "python3-3.12.9",
       "pname": "python3",
-      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "rev_count": 744133,
-      "rev_date": "2025-01-26T09:59:49Z",
-      "scrape_date": "2025-01-27T03:28:00Z",
+      "rev": "5e5402ecbcb27af32284d4a62553c019a3a49ea6",
+      "rev_count": 775060,
+      "rev_date": "2025-03-27T17:14:43Z",
+      "scrape_date": "2025-03-29T01:10:13.470943Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "3.12.8",
+      "version": "3.12.9",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/ffxlyz7jrxxyxg70cn3h961lr91lan2j-python3-3.12.8"
+        "out": "/nix/store/3p3agnh4792y8bgjp0s8xx5bym1ahpks-python3-3.12.9"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -341,28 +338,28 @@
     {
       "attr_path": "python3",
       "broken": false,
-      "derivation": "/nix/store/zxifdbxg585m8k58i5n52jf48s1jzf5j-python3-3.12.8.drv",
+      "derivation": "/nix/store/cvm8irmg5j24v0iqk8w6z254jcl9vjzd-python3-3.12.9.drv",
       "description": "High-level dynamically-typed programming language",
       "install_id": "python3",
       "license": "Python-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "name": "python3-3.12.8",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5e5402ecbcb27af32284d4a62553c019a3a49ea6",
+      "name": "python3-3.12.9",
       "pname": "python3",
-      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "rev_count": 744133,
-      "rev_date": "2025-01-26T09:59:49Z",
-      "scrape_date": "2025-01-27T03:28:00Z",
+      "rev": "5e5402ecbcb27af32284d4a62553c019a3a49ea6",
+      "rev_count": 775060,
+      "rev_date": "2025-03-27T17:14:43Z",
+      "scrape_date": "2025-03-29T01:27:49.341278Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "3.12.8",
+      "version": "3.12.9",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "debug": "/nix/store/zgss40jlwqkb22z37bi8nb3jwg28sj10-python3-3.12.8-debug",
-        "out": "/nix/store/p3nlssl5qqib5kysa30mqzzzp364z6fb-python3-3.12.8"
+        "debug": "/nix/store/p2ym34g9y2w9k3w2pgbj2akn7b5l6xlh-python3-3.12.9-debug",
+        "out": "/nix/store/cxhrrsf7spcgdkrxmlbfzc1bh46rzf7w-python3-3.12.9"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -371,27 +368,27 @@
     {
       "attr_path": "python3",
       "broken": false,
-      "derivation": "/nix/store/0ccx6365q8i75k06jv3ypwngldmdi9l4-python3-3.12.8.drv",
+      "derivation": "/nix/store/xzh86qk42dj8pqq3v9qay3ckvb97hyi3-python3-3.12.9.drv",
       "description": "High-level dynamically-typed programming language",
       "install_id": "python3",
       "license": "Python-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "name": "python3-3.12.8",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5e5402ecbcb27af32284d4a62553c019a3a49ea6",
+      "name": "python3-3.12.9",
       "pname": "python3",
-      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "rev_count": 744133,
-      "rev_date": "2025-01-26T09:59:49Z",
-      "scrape_date": "2025-01-27T03:28:00Z",
+      "rev": "5e5402ecbcb27af32284d4a62553c019a3a49ea6",
+      "rev_count": 775060,
+      "rev_date": "2025-03-27T17:14:43Z",
+      "scrape_date": "2025-03-29T01:42:48.348463Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "3.12.8",
+      "version": "3.12.9",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/45g1q2ama4j033d5qi2lgfzy1xmagnmf-python3-3.12.8"
+        "out": "/nix/store/8fw6a4is5mkpmr9vd80inz63qdi130m3-python3-3.12.9"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -400,55 +397,152 @@
     {
       "attr_path": "python3",
       "broken": false,
-      "derivation": "/nix/store/f7lzb562wb7wjvmlr2vh53llhjhz6i9v-python3-3.12.8.drv",
+      "derivation": "/nix/store/0mg12776wbbfzw2fdslyhir14cw1cgfj-python3-3.12.9.drv",
       "description": "High-level dynamically-typed programming language",
       "install_id": "python3",
       "license": "Python-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "name": "python3-3.12.8",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5e5402ecbcb27af32284d4a62553c019a3a49ea6",
+      "name": "python3-3.12.9",
       "pname": "python3",
-      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "rev_count": 744133,
-      "rev_date": "2025-01-26T09:59:49Z",
-      "scrape_date": "2025-01-27T03:28:00Z",
+      "rev": "5e5402ecbcb27af32284d4a62553c019a3a49ea6",
+      "rev_count": 775060,
+      "rev_date": "2025-03-27T17:14:43Z",
+      "scrape_date": "2025-03-29T02:01:29.126092Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "3.12.8",
+      "version": "3.12.9",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "debug": "/nix/store/yg7pavnh3hhw0lwfm9c4jr9yi3rq8h4r-python3-3.12.8-debug",
-        "out": "/nix/store/qrc496n6fsqp4p5m5h8wmw5d5jwyw5mr-python3-3.12.8"
+        "debug": "/nix/store/1kjknndig10774mkf6b2b95kn17q4rm5-python3-3.12.9-debug",
+        "out": "/nix/store/f2krmq3iv5nibcvn4rw7nrnrciqprdkh-python3-3.12.9"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
       "priority": 5
     },
     {
-      "attr_path": "vhs",
+      "attr_path": "ttyd",
       "broken": false,
-      "derivation": "/nix/store/7nngrmfhfawkf6xbrzsv8z3vxmp5sa2c-vhs-0.0.1.drv",
-      "description": "test publish",
-      "install_id": "tomberek/vhs",
-      "locked_url": "git@github.com:tomberek/vhs?rev=e3caf7656f52148e02b4e00b4d437d04d905b529",
-      "name": "vhs-0.0.1",
-      "pname": "vhs",
-      "rev": "e3caf7656f52148e02b4e00b4d437d04d905b529",
-      "rev_count": 701,
-      "rev_date": "2025-03-29T00:05:03Z",
-      "scrape_date": "2025-03-29T00:23:29.577938610Z",
+      "derivation": "/nix/store/m20pbp23jcr7zkbhspjk56b007wqwyqb-ttyd-1.7.7.drv",
+      "description": "Share your terminal over the web",
+      "install_id": "ttyd",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5e5402ecbcb27af32284d4a62553c019a3a49ea6",
+      "name": "ttyd-1.7.7",
+      "pname": "ttyd",
+      "rev": "5e5402ecbcb27af32284d4a62553c019a3a49ea6",
+      "rev_count": 775060,
+      "rev_date": "2025-03-27T17:14:43Z",
+      "scrape_date": "2025-03-29T01:10:52.987262Z",
       "stabilities": [
         "unstable"
       ],
-      "version": "0.0.1",
+      "unfree": false,
+      "version": "1.7.7",
       "outputs_to_install": [
+        "man",
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/pcgcl7vwdbnng9dls41g1yi53yxg7l3q-vhs-0.0.1"
+        "man": "/nix/store/wa0dkqfkx9hk548b1yq8ccwzyry23v1z-ttyd-1.7.7-man",
+        "out": "/nix/store/cirzbf67vyiv5lxyg0d7492ampj4ffaq-ttyd-1.7.7"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "ttyd",
+      "broken": false,
+      "derivation": "/nix/store/wnj02a40qcpws43vx1vl7gc3kz8x8cqd-ttyd-1.7.7.drv",
+      "description": "Share your terminal over the web",
+      "install_id": "ttyd",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5e5402ecbcb27af32284d4a62553c019a3a49ea6",
+      "name": "ttyd-1.7.7",
+      "pname": "ttyd",
+      "rev": "5e5402ecbcb27af32284d4a62553c019a3a49ea6",
+      "rev_count": 775060,
+      "rev_date": "2025-03-27T17:14:43Z",
+      "scrape_date": "2025-03-29T01:28:46.651949Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.7.7",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "man": "/nix/store/42p5a3cvaa7rl02m6mabjs7dq1xpcx6c-ttyd-1.7.7-man",
+        "out": "/nix/store/7d7h4cab6bi7w3ab9287nlvhggymfcrh-ttyd-1.7.7"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "ttyd",
+      "broken": false,
+      "derivation": "/nix/store/vwcxxv8wadahiqxr244l3vpf61d3lnvx-ttyd-1.7.7.drv",
+      "description": "Share your terminal over the web",
+      "install_id": "ttyd",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5e5402ecbcb27af32284d4a62553c019a3a49ea6",
+      "name": "ttyd-1.7.7",
+      "pname": "ttyd",
+      "rev": "5e5402ecbcb27af32284d4a62553c019a3a49ea6",
+      "rev_count": 775060,
+      "rev_date": "2025-03-27T17:14:43Z",
+      "scrape_date": "2025-03-29T01:43:27.986532Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.7.7",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "man": "/nix/store/9zalcyiimjqfc5mb6a9l6w44b80n4sh4-ttyd-1.7.7-man",
+        "out": "/nix/store/dcbymbx51ga67c6k05hc72x77frcpix4-ttyd-1.7.7"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "ttyd",
+      "broken": false,
+      "derivation": "/nix/store/cmh8a33yrrs6n0kmyf6racr0d304m63s-ttyd-1.7.7.drv",
+      "description": "Share your terminal over the web",
+      "install_id": "ttyd",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=5e5402ecbcb27af32284d4a62553c019a3a49ea6",
+      "name": "ttyd-1.7.7",
+      "pname": "ttyd",
+      "rev": "5e5402ecbcb27af32284d4a62553c019a3a49ea6",
+      "rev_count": 775060,
+      "rev_date": "2025-03-27T17:14:43Z",
+      "scrape_date": "2025-03-29T02:02:31.120307Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.7.7",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "man": "/nix/store/rpk89xasy25mwkd6db33vryipiyisx0m-ttyd-1.7.7-man",
+        "out": "/nix/store/2l09v3n55pisrlva3w1z0wgnwkmzxksg-ttyd-1.7.7"
       },
       "system": "x86_64-linux",
       "group": "toplevel",

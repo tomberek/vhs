@@ -5,8 +5,10 @@ version = 1
 go.pkg-path = "go"
 ffmpeg.pkg-path = "ffmpeg"
 python3.pkg-path = "python3"
-"tomberek/vhs".pkg-path = "tomberek/vhs"
-"tomberek/vhs".systems = ["x86_64-linux"]
+ttyd.pkg-path = "ttyd"
+# "meetrlyio/vhs".pkg-group = "m"
+# "meetrlyio/vhs".pkg-path = "meetrlyio/vhs"
+# "meetrlyio/vhs".systems = ["x86_64-linux"]
 # gum.pkg-path = "gum"
 # gum.version = "^0.14.5"
 
@@ -41,9 +43,11 @@ vhss.version = "0.0.1"
 vhss.command = '''
 go mod tidy
 go build .
+echo DO SOMETHING ELSE
 mkdir -p $out/bin
 mv vhs $out/bin/.
 '''
+
 vhs.description = "test publish"
 vhs.version = "0.0.1"
 vhs.command = '''
