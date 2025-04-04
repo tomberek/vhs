@@ -3,22 +3,12 @@
   "manifest": {
     "version": 1,
     "install": {
-      "ffmpeg": {
-        "pkg-path": "ffmpeg"
-      },
-      "go": {
-        "pkg-path": "go"
-      },
-      "python3": {
-        "pkg-path": "python3"
-      },
-      "ttyd": {
-        "pkg-path": "ttyd"
+      "curl": {
+        "pkg-path": "curl"
       }
     },
     "vars": {
-      "A": "1",
-      "B": "2"
+      "A": "1"
     },
     "hook": {
       "on-activate": "echo Run initialization\n"
@@ -27,522 +17,148 @@
       "common": "alias l=\"ls -alh\"\n"
     },
     "options": {},
-    "services": {
-      "myservice": {
-        "command": "python3 -m http.server"
-      }
-    },
     "build": {
-      "vhs": {
-        "command": "go mod tidy\ngo build .\nmkdir -p $out/bin\nmv vhs $out/bin/.\n",
+      "eck": {
+        "command": "mkdir -p $out/bin\ncat > $out/bin/eck <<'EOF'\n#!/usr/bin/env bash\necho \"$@\"\necho RANDOM TOOL USED BY THE OPS FOLKS\ncurl --version\nEOF\nchmod +x $out/bin/eck\n",
         "version": "0.0.1",
-        "description": "test publish"
-      },
-      "vhss": {
-        "command": "go mod tidy\ngo build .\necho DO SOMETHING ELSE\nmkdir -p $out/bin\nmv vhs $out/bin/.\n",
-        "version": "0.0.1",
-        "description": "test publish"
+        "description": "will echo things"
       }
     }
   },
   "packages": [
     {
-      "attr_path": "ffmpeg",
+      "attr_path": "curl",
       "broken": false,
-      "derivation": "/nix/store/qqnk39j9rq5jms8mzz2b0iq4kl36i1a7-ffmpeg-7.1.1.drv",
-      "description": "Complete, cross-platform solution to record, convert and stream audio and video",
-      "install_id": "ffmpeg",
-      "license": "[ LGPL-2.1-or-later, GPL-2.0-or-later, LGPL-3.0-or-later, GPL-3.0-or-later ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=5e5402ecbcb27af32284d4a62553c019a3a49ea6",
-      "name": "ffmpeg-7.1.1",
-      "pname": "ffmpeg",
-      "rev": "5e5402ecbcb27af32284d4a62553c019a3a49ea6",
-      "rev_count": 775060,
-      "rev_date": "2025-03-27T17:14:43Z",
-      "scrape_date": "2025-03-29T01:10:05.532871Z",
+      "derivation": "/nix/store/1lhp10v70mj2ph77pvs31d7xlpxgc361-curl-8.12.1.drv",
+      "description": "Command line tool for transferring files with URL syntax",
+      "install_id": "curl",
+      "license": "curl",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "name": "curl-8.12.1",
+      "pname": "curl",
+      "rev": "2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "rev_count": 778048,
+      "rev_date": "2025-04-02T08:40:04Z",
+      "scrape_date": "2025-04-03T01:11:02.920859Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "7.1.1",
+      "version": "8.12.1",
       "outputs_to_install": [
         "bin",
         "man"
       ],
       "outputs": {
-        "bin": "/nix/store/pijzl7w8sk2ynkbfjahrn3y18n0fa1a8-ffmpeg-7.1.1-bin",
-        "data": "/nix/store/5ycg65w1cjd769j0k8i3d95jqijn6r9q-ffmpeg-7.1.1-data",
-        "dev": "/nix/store/shr80pw02b4bl6ivxd2b9594xk00hb6c-ffmpeg-7.1.1-dev",
-        "doc": "/nix/store/6wlifnki53phlzslpizi7w0gq9cdnd5j-ffmpeg-7.1.1-doc",
-        "lib": "/nix/store/2q2raxa5l13fia3i9vzja84kpy635cbh-ffmpeg-7.1.1-lib",
-        "man": "/nix/store/fkxf65f4pd87x1nbmjlrqm01i4i6fvn2-ffmpeg-7.1.1-man",
-        "out": "/nix/store/srsk9w1990dpahhamxcvi14bs4v50d1w-ffmpeg-7.1.1"
+        "bin": "/nix/store/86fqlv3ivlg7wxqg2zyxdaba79f964xc-curl-8.12.1-bin",
+        "dev": "/nix/store/3gaqczbhg021cyxbdipa072bmwxn5rii-curl-8.12.1-dev",
+        "devdoc": "/nix/store/6ln0174ccp76y126pjypqmh3i2wakyv3-curl-8.12.1-devdoc",
+        "man": "/nix/store/pbbm6l8x61w0n0v1f0q5k8fbl3wrwdhx-curl-8.12.1-man",
+        "out": "/nix/store/qgag9flqkdc2pplvcvzbrbicy66yh3fn-curl-8.12.1"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
       "priority": 5
     },
     {
-      "attr_path": "ffmpeg",
+      "attr_path": "curl",
       "broken": false,
-      "derivation": "/nix/store/g30d2nrg10dpcm0c5k3q13dc6r0a0y21-ffmpeg-7.1.1.drv",
-      "description": "Complete, cross-platform solution to record, convert and stream audio and video",
-      "install_id": "ffmpeg",
-      "license": "[ LGPL-2.1-or-later, GPL-2.0-or-later, LGPL-3.0-or-later, GPL-3.0-or-later ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=5e5402ecbcb27af32284d4a62553c019a3a49ea6",
-      "name": "ffmpeg-7.1.1",
-      "pname": "ffmpeg",
-      "rev": "5e5402ecbcb27af32284d4a62553c019a3a49ea6",
-      "rev_count": 775060,
-      "rev_date": "2025-03-27T17:14:43Z",
-      "scrape_date": "2025-03-29T01:27:29.240577Z",
+      "derivation": "/nix/store/g8l0vbzmxrr6qw44wgqllb4mw5sl8g5s-curl-8.12.1.drv",
+      "description": "Command line tool for transferring files with URL syntax",
+      "install_id": "curl",
+      "license": "curl",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "name": "curl-8.12.1",
+      "pname": "curl",
+      "rev": "2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "rev_count": 778048,
+      "rev_date": "2025-04-02T08:40:04Z",
+      "scrape_date": "2025-04-03T01:28:46.260408Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "7.1.1",
+      "version": "8.12.1",
       "outputs_to_install": [
         "bin",
         "man"
       ],
       "outputs": {
-        "bin": "/nix/store/zi3ahf2v7cvpz5c5x7p7yazaa795qca1-ffmpeg-7.1.1-bin",
-        "data": "/nix/store/m773h2mjxcvb8sxsjrd9q6gihnhi997f-ffmpeg-7.1.1-data",
-        "dev": "/nix/store/mklkaaf314x31g3ynw62xk04lj4y629f-ffmpeg-7.1.1-dev",
-        "doc": "/nix/store/l2f93x44m3ywkb5zfd354f2di28alykb-ffmpeg-7.1.1-doc",
-        "lib": "/nix/store/2542lds1lhmx27zg8kyyf8xf7vn6fhm9-ffmpeg-7.1.1-lib",
-        "man": "/nix/store/3pd0aks6a9ig7jmiclay1rhd4i4f6xv9-ffmpeg-7.1.1-man",
-        "out": "/nix/store/9jrmzxf0swsa6pqw9n040xlm1g2bbacn-ffmpeg-7.1.1"
+        "bin": "/nix/store/z7wva8na2xihw715flhf7qzxmzajh2ka-curl-8.12.1-bin",
+        "debug": "/nix/store/775cbq71iyyscma2vvhwxjlpzx8fqqh9-curl-8.12.1-debug",
+        "dev": "/nix/store/vgq4wjxqc1pg31i2hamypdj3zh1kjx74-curl-8.12.1-dev",
+        "devdoc": "/nix/store/xynp72zh6y0d2xxisir41fd212hcz596-curl-8.12.1-devdoc",
+        "man": "/nix/store/80njhwgrrzkzhi3mmbzy14vnq837m3zv-curl-8.12.1-man",
+        "out": "/nix/store/g7hzmaxs3iyinjzx6rzci1wcrn0h0dhk-curl-8.12.1"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
       "priority": 5
     },
     {
-      "attr_path": "ffmpeg",
+      "attr_path": "curl",
       "broken": false,
-      "derivation": "/nix/store/lbrbi844c760izmxrdrbnz2djbqnm41y-ffmpeg-7.1.1.drv",
-      "description": "Complete, cross-platform solution to record, convert and stream audio and video",
-      "install_id": "ffmpeg",
-      "license": "[ LGPL-2.1-or-later, GPL-2.0-or-later, LGPL-3.0-or-later, GPL-3.0-or-later ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=5e5402ecbcb27af32284d4a62553c019a3a49ea6",
-      "name": "ffmpeg-7.1.1",
-      "pname": "ffmpeg",
-      "rev": "5e5402ecbcb27af32284d4a62553c019a3a49ea6",
-      "rev_count": 775060,
-      "rev_date": "2025-03-27T17:14:43Z",
-      "scrape_date": "2025-03-29T01:42:40.296275Z",
+      "derivation": "/nix/store/3s3ckp7zjs4lr8lm98w4b6rvpy9zgqfm-curl-8.12.1.drv",
+      "description": "Command line tool for transferring files with URL syntax",
+      "install_id": "curl",
+      "license": "curl",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "name": "curl-8.12.1",
+      "pname": "curl",
+      "rev": "2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "rev_count": 778048,
+      "rev_date": "2025-04-02T08:40:04Z",
+      "scrape_date": "2025-04-03T01:44:59.632067Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "7.1.1",
+      "version": "8.12.1",
       "outputs_to_install": [
         "bin",
         "man"
       ],
       "outputs": {
-        "bin": "/nix/store/3dkll7ypk49z0w58zgb3mhv9z0r2dz24-ffmpeg-7.1.1-bin",
-        "data": "/nix/store/4dkwapsb2kxz87hxd8wyv7fg4nhv5168-ffmpeg-7.1.1-data",
-        "dev": "/nix/store/8af5617pc1wxykb016x24fsgar0b2ahw-ffmpeg-7.1.1-dev",
-        "doc": "/nix/store/j4lmf1qbls05wrnl4v25nb92yrab8a91-ffmpeg-7.1.1-doc",
-        "lib": "/nix/store/hzw4x9yw9k2y858d420ls3d5rmp69k3j-ffmpeg-7.1.1-lib",
-        "man": "/nix/store/cwy10kzivcyxdw4jvpqcjim0v45wbafi-ffmpeg-7.1.1-man",
-        "out": "/nix/store/41z63lia5qmj99iivpv9d99sfi3i5jg6-ffmpeg-7.1.1"
+        "bin": "/nix/store/p0x9dx56vyii50cwbv03wjkhwivpyg4b-curl-8.12.1-bin",
+        "dev": "/nix/store/an8c76pbcv3sdli8cvg8sff8qnclh9rz-curl-8.12.1-dev",
+        "devdoc": "/nix/store/kmwq1w6yjmb19glyqk3q6czn4kbg0xag-curl-8.12.1-devdoc",
+        "man": "/nix/store/rac3x8bmq64rbm4msd83652vcby7ibav-curl-8.12.1-man",
+        "out": "/nix/store/bi6qs79brnykvz8lc7kmjbmzxv3cjn1q-curl-8.12.1"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
       "priority": 5
     },
     {
-      "attr_path": "ffmpeg",
+      "attr_path": "curl",
       "broken": false,
-      "derivation": "/nix/store/xl34gzfbhrh7mhfv0ir8lyp28h2ws5n3-ffmpeg-7.1.1.drv",
-      "description": "Complete, cross-platform solution to record, convert and stream audio and video",
-      "install_id": "ffmpeg",
-      "license": "[ LGPL-2.1-or-later, GPL-2.0-or-later, LGPL-3.0-or-later, GPL-3.0-or-later ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=5e5402ecbcb27af32284d4a62553c019a3a49ea6",
-      "name": "ffmpeg-7.1.1",
-      "pname": "ffmpeg",
-      "rev": "5e5402ecbcb27af32284d4a62553c019a3a49ea6",
-      "rev_count": 775060,
-      "rev_date": "2025-03-27T17:14:43Z",
-      "scrape_date": "2025-03-29T02:01:05.971286Z",
+      "derivation": "/nix/store/rlj4bd2wpskzaw28ciy9hzp7x5njl1mg-curl-8.12.1.drv",
+      "description": "Command line tool for transferring files with URL syntax",
+      "install_id": "curl",
+      "license": "curl",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "name": "curl-8.12.1",
+      "pname": "curl",
+      "rev": "2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "rev_count": 778048,
+      "rev_date": "2025-04-02T08:40:04Z",
+      "scrape_date": "2025-04-03T02:04:24.184506Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "7.1.1",
+      "version": "8.12.1",
       "outputs_to_install": [
         "bin",
         "man"
       ],
       "outputs": {
-        "bin": "/nix/store/gjzf3dca4v804mx46z1xnr2vqmi8r90n-ffmpeg-7.1.1-bin",
-        "data": "/nix/store/fcw9rgcrlx81vv71ygj4gmi0x6fncwpp-ffmpeg-7.1.1-data",
-        "dev": "/nix/store/3002w5flrcflzhjy353kjjgmssw7py7x-ffmpeg-7.1.1-dev",
-        "doc": "/nix/store/ml301rkwb57afnb1bfyilf0hgbjrng3i-ffmpeg-7.1.1-doc",
-        "lib": "/nix/store/pg0bn822q72sy52ws98ks9c6w1k6s2sp-ffmpeg-7.1.1-lib",
-        "man": "/nix/store/6pj3ngc7l3i701bi8ivg69i2456wa0ds-ffmpeg-7.1.1-man",
-        "out": "/nix/store/776zq7f0x4039p76lrcakv33knsymais-ffmpeg-7.1.1"
-      },
-      "system": "x86_64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "go",
-      "broken": false,
-      "derivation": "/nix/store/p823p8i547lj7yp3yr2b5i12a4wnwby6-go-1.24.1.drv",
-      "description": "Go Programming language",
-      "install_id": "go",
-      "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=5e5402ecbcb27af32284d4a62553c019a3a49ea6",
-      "name": "go-1.24.1",
-      "pname": "go",
-      "rev": "5e5402ecbcb27af32284d4a62553c019a3a49ea6",
-      "rev_count": 775060,
-      "rev_date": "2025-03-27T17:14:43Z",
-      "scrape_date": "2025-03-29T01:10:05.744522Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "1.24.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/jp3z5jp9gaxsw7fdzbqn29aabmrxq62j-go-1.24.1"
-      },
-      "system": "aarch64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "go",
-      "broken": false,
-      "derivation": "/nix/store/5difmnrawi0hf4a7vsz0my25ivf34khi-go-1.24.1.drv",
-      "description": "Go Programming language",
-      "install_id": "go",
-      "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=5e5402ecbcb27af32284d4a62553c019a3a49ea6",
-      "name": "go-1.24.1",
-      "pname": "go",
-      "rev": "5e5402ecbcb27af32284d4a62553c019a3a49ea6",
-      "rev_count": 775060,
-      "rev_date": "2025-03-27T17:14:43Z",
-      "scrape_date": "2025-03-29T01:27:29.838357Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "1.24.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/6zvrmsmdg7p8yw3vii20g40b4zsh6kjr-go-1.24.1"
-      },
-      "system": "aarch64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "go",
-      "broken": false,
-      "derivation": "/nix/store/992wk5rpadggrac2hyv44w4wvw4gpmxl-go-1.24.1.drv",
-      "description": "Go Programming language",
-      "install_id": "go",
-      "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=5e5402ecbcb27af32284d4a62553c019a3a49ea6",
-      "name": "go-1.24.1",
-      "pname": "go",
-      "rev": "5e5402ecbcb27af32284d4a62553c019a3a49ea6",
-      "rev_count": 775060,
-      "rev_date": "2025-03-27T17:14:43Z",
-      "scrape_date": "2025-03-29T01:42:40.534698Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "1.24.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/2bcic1xcha2k11djynr488v3pg0nnghr-go-1.24.1"
-      },
-      "system": "x86_64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "go",
-      "broken": false,
-      "derivation": "/nix/store/xj7x9f9c6z1wc7b7hpy8k3w65vb6lfi5-go-1.24.1.drv",
-      "description": "Go Programming language",
-      "install_id": "go",
-      "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=5e5402ecbcb27af32284d4a62553c019a3a49ea6",
-      "name": "go-1.24.1",
-      "pname": "go",
-      "rev": "5e5402ecbcb27af32284d4a62553c019a3a49ea6",
-      "rev_count": 775060,
-      "rev_date": "2025-03-27T17:14:43Z",
-      "scrape_date": "2025-03-29T02:01:06.669670Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "1.24.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/g29rrn8qqlg4yjqv543ryrkimr7fk43h-go-1.24.1"
-      },
-      "system": "x86_64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "python3",
-      "broken": false,
-      "derivation": "/nix/store/cb1gsjqlf1dzry390xrsl6ghpaqmsaxd-python3-3.12.9.drv",
-      "description": "High-level dynamically-typed programming language",
-      "install_id": "python3",
-      "license": "Python-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=5e5402ecbcb27af32284d4a62553c019a3a49ea6",
-      "name": "python3-3.12.9",
-      "pname": "python3",
-      "rev": "5e5402ecbcb27af32284d4a62553c019a3a49ea6",
-      "rev_count": 775060,
-      "rev_date": "2025-03-27T17:14:43Z",
-      "scrape_date": "2025-03-29T01:10:13.470943Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "3.12.9",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/3p3agnh4792y8bgjp0s8xx5bym1ahpks-python3-3.12.9"
-      },
-      "system": "aarch64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "python3",
-      "broken": false,
-      "derivation": "/nix/store/cvm8irmg5j24v0iqk8w6z254jcl9vjzd-python3-3.12.9.drv",
-      "description": "High-level dynamically-typed programming language",
-      "install_id": "python3",
-      "license": "Python-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=5e5402ecbcb27af32284d4a62553c019a3a49ea6",
-      "name": "python3-3.12.9",
-      "pname": "python3",
-      "rev": "5e5402ecbcb27af32284d4a62553c019a3a49ea6",
-      "rev_count": 775060,
-      "rev_date": "2025-03-27T17:14:43Z",
-      "scrape_date": "2025-03-29T01:27:49.341278Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "3.12.9",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "debug": "/nix/store/p2ym34g9y2w9k3w2pgbj2akn7b5l6xlh-python3-3.12.9-debug",
-        "out": "/nix/store/cxhrrsf7spcgdkrxmlbfzc1bh46rzf7w-python3-3.12.9"
-      },
-      "system": "aarch64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "python3",
-      "broken": false,
-      "derivation": "/nix/store/xzh86qk42dj8pqq3v9qay3ckvb97hyi3-python3-3.12.9.drv",
-      "description": "High-level dynamically-typed programming language",
-      "install_id": "python3",
-      "license": "Python-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=5e5402ecbcb27af32284d4a62553c019a3a49ea6",
-      "name": "python3-3.12.9",
-      "pname": "python3",
-      "rev": "5e5402ecbcb27af32284d4a62553c019a3a49ea6",
-      "rev_count": 775060,
-      "rev_date": "2025-03-27T17:14:43Z",
-      "scrape_date": "2025-03-29T01:42:48.348463Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "3.12.9",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/8fw6a4is5mkpmr9vd80inz63qdi130m3-python3-3.12.9"
-      },
-      "system": "x86_64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "python3",
-      "broken": false,
-      "derivation": "/nix/store/0mg12776wbbfzw2fdslyhir14cw1cgfj-python3-3.12.9.drv",
-      "description": "High-level dynamically-typed programming language",
-      "install_id": "python3",
-      "license": "Python-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=5e5402ecbcb27af32284d4a62553c019a3a49ea6",
-      "name": "python3-3.12.9",
-      "pname": "python3",
-      "rev": "5e5402ecbcb27af32284d4a62553c019a3a49ea6",
-      "rev_count": 775060,
-      "rev_date": "2025-03-27T17:14:43Z",
-      "scrape_date": "2025-03-29T02:01:29.126092Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "3.12.9",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "debug": "/nix/store/1kjknndig10774mkf6b2b95kn17q4rm5-python3-3.12.9-debug",
-        "out": "/nix/store/f2krmq3iv5nibcvn4rw7nrnrciqprdkh-python3-3.12.9"
-      },
-      "system": "x86_64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "ttyd",
-      "broken": false,
-      "derivation": "/nix/store/m20pbp23jcr7zkbhspjk56b007wqwyqb-ttyd-1.7.7.drv",
-      "description": "Share your terminal over the web",
-      "install_id": "ttyd",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=5e5402ecbcb27af32284d4a62553c019a3a49ea6",
-      "name": "ttyd-1.7.7",
-      "pname": "ttyd",
-      "rev": "5e5402ecbcb27af32284d4a62553c019a3a49ea6",
-      "rev_count": 775060,
-      "rev_date": "2025-03-27T17:14:43Z",
-      "scrape_date": "2025-03-29T01:10:52.987262Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "1.7.7",
-      "outputs_to_install": [
-        "man",
-        "out"
-      ],
-      "outputs": {
-        "man": "/nix/store/wa0dkqfkx9hk548b1yq8ccwzyry23v1z-ttyd-1.7.7-man",
-        "out": "/nix/store/cirzbf67vyiv5lxyg0d7492ampj4ffaq-ttyd-1.7.7"
-      },
-      "system": "aarch64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "ttyd",
-      "broken": false,
-      "derivation": "/nix/store/wnj02a40qcpws43vx1vl7gc3kz8x8cqd-ttyd-1.7.7.drv",
-      "description": "Share your terminal over the web",
-      "install_id": "ttyd",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=5e5402ecbcb27af32284d4a62553c019a3a49ea6",
-      "name": "ttyd-1.7.7",
-      "pname": "ttyd",
-      "rev": "5e5402ecbcb27af32284d4a62553c019a3a49ea6",
-      "rev_count": 775060,
-      "rev_date": "2025-03-27T17:14:43Z",
-      "scrape_date": "2025-03-29T01:28:46.651949Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "1.7.7",
-      "outputs_to_install": [
-        "man",
-        "out"
-      ],
-      "outputs": {
-        "man": "/nix/store/42p5a3cvaa7rl02m6mabjs7dq1xpcx6c-ttyd-1.7.7-man",
-        "out": "/nix/store/7d7h4cab6bi7w3ab9287nlvhggymfcrh-ttyd-1.7.7"
-      },
-      "system": "aarch64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "ttyd",
-      "broken": false,
-      "derivation": "/nix/store/vwcxxv8wadahiqxr244l3vpf61d3lnvx-ttyd-1.7.7.drv",
-      "description": "Share your terminal over the web",
-      "install_id": "ttyd",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=5e5402ecbcb27af32284d4a62553c019a3a49ea6",
-      "name": "ttyd-1.7.7",
-      "pname": "ttyd",
-      "rev": "5e5402ecbcb27af32284d4a62553c019a3a49ea6",
-      "rev_count": 775060,
-      "rev_date": "2025-03-27T17:14:43Z",
-      "scrape_date": "2025-03-29T01:43:27.986532Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "1.7.7",
-      "outputs_to_install": [
-        "man",
-        "out"
-      ],
-      "outputs": {
-        "man": "/nix/store/9zalcyiimjqfc5mb6a9l6w44b80n4sh4-ttyd-1.7.7-man",
-        "out": "/nix/store/dcbymbx51ga67c6k05hc72x77frcpix4-ttyd-1.7.7"
-      },
-      "system": "x86_64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "ttyd",
-      "broken": false,
-      "derivation": "/nix/store/cmh8a33yrrs6n0kmyf6racr0d304m63s-ttyd-1.7.7.drv",
-      "description": "Share your terminal over the web",
-      "install_id": "ttyd",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=5e5402ecbcb27af32284d4a62553c019a3a49ea6",
-      "name": "ttyd-1.7.7",
-      "pname": "ttyd",
-      "rev": "5e5402ecbcb27af32284d4a62553c019a3a49ea6",
-      "rev_count": 775060,
-      "rev_date": "2025-03-27T17:14:43Z",
-      "scrape_date": "2025-03-29T02:02:31.120307Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "1.7.7",
-      "outputs_to_install": [
-        "man",
-        "out"
-      ],
-      "outputs": {
-        "man": "/nix/store/rpk89xasy25mwkd6db33vryipiyisx0m-ttyd-1.7.7-man",
-        "out": "/nix/store/2l09v3n55pisrlva3w1z0wgnwkmzxksg-ttyd-1.7.7"
+        "bin": "/nix/store/k27z9fx6v0msbsl2p54sx4sx0r8247m6-curl-8.12.1-bin",
+        "debug": "/nix/store/w6wlkf6s83lnw87jvqgczqj2674ilx4a-curl-8.12.1-debug",
+        "dev": "/nix/store/cn83nc0n8gkl0bi3spykczd3j44qkbq2-curl-8.12.1-dev",
+        "devdoc": "/nix/store/ynv5wahwnghzk8v4zfbk8rmdn96cx4cf-curl-8.12.1-devdoc",
+        "man": "/nix/store/03skkhbdzmivfr8c99rqbb9s5clfi0sy-curl-8.12.1-man",
+        "out": "/nix/store/l6hzv5ms9fi7mx2j3xh0i42anyjcgpp8-curl-8.12.1"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
