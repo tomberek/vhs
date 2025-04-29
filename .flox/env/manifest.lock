@@ -5,6 +5,9 @@
     "install": {
       "curl": {
         "pkg-path": "curl"
+      },
+      "dasel": {
+        "pkg-path": "dasel"
       }
     },
     "vars": {
@@ -33,13 +36,13 @@
       "description": "Command line tool for transferring files with URL syntax",
       "install_id": "curl",
       "license": "curl",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=42a1c966be226125b48c384171c44c651c236c22",
       "name": "curl-8.12.1",
       "pname": "curl",
-      "rev": "2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
-      "rev_count": 778048,
-      "rev_date": "2025-04-02T08:40:04Z",
-      "scrape_date": "2025-04-03T01:11:02.920859Z",
+      "rev": "42a1c966be226125b48c384171c44c651c236c22",
+      "rev_count": 779115,
+      "rev_date": "2025-04-05T04:29:29Z",
+      "scrape_date": "2025-04-07T01:12:05.632256Z",
       "stabilities": [
         "unstable"
       ],
@@ -67,13 +70,13 @@
       "description": "Command line tool for transferring files with URL syntax",
       "install_id": "curl",
       "license": "curl",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=42a1c966be226125b48c384171c44c651c236c22",
       "name": "curl-8.12.1",
       "pname": "curl",
-      "rev": "2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
-      "rev_count": 778048,
-      "rev_date": "2025-04-02T08:40:04Z",
-      "scrape_date": "2025-04-03T01:28:46.260408Z",
+      "rev": "42a1c966be226125b48c384171c44c651c236c22",
+      "rev_count": 779115,
+      "rev_date": "2025-04-05T04:29:29Z",
+      "scrape_date": "2025-04-07T01:30:43.521041Z",
       "stabilities": [
         "unstable"
       ],
@@ -102,13 +105,13 @@
       "description": "Command line tool for transferring files with URL syntax",
       "install_id": "curl",
       "license": "curl",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=42a1c966be226125b48c384171c44c651c236c22",
       "name": "curl-8.12.1",
       "pname": "curl",
-      "rev": "2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
-      "rev_count": 778048,
-      "rev_date": "2025-04-02T08:40:04Z",
-      "scrape_date": "2025-04-03T01:44:59.632067Z",
+      "rev": "42a1c966be226125b48c384171c44c651c236c22",
+      "rev_count": 779115,
+      "rev_date": "2025-04-05T04:29:29Z",
+      "scrape_date": "2025-04-07T01:47:14.569470Z",
       "stabilities": [
         "unstable"
       ],
@@ -136,13 +139,13 @@
       "description": "Command line tool for transferring files with URL syntax",
       "install_id": "curl",
       "license": "curl",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=42a1c966be226125b48c384171c44c651c236c22",
       "name": "curl-8.12.1",
       "pname": "curl",
-      "rev": "2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
-      "rev_count": 778048,
-      "rev_date": "2025-04-02T08:40:04Z",
-      "scrape_date": "2025-04-03T02:04:24.184506Z",
+      "rev": "42a1c966be226125b48c384171c44c651c236c22",
+      "rev_count": 779115,
+      "rev_date": "2025-04-05T04:29:29Z",
+      "scrape_date": "2025-04-07T02:06:54.802125Z",
       "stabilities": [
         "unstable"
       ],
@@ -159,6 +162,122 @@
         "devdoc": "/nix/store/ynv5wahwnghzk8v4zfbk8rmdn96cx4cf-curl-8.12.1-devdoc",
         "man": "/nix/store/03skkhbdzmivfr8c99rqbb9s5clfi0sy-curl-8.12.1-man",
         "out": "/nix/store/l6hzv5ms9fi7mx2j3xh0i42anyjcgpp8-curl-8.12.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "dasel",
+      "broken": false,
+      "derivation": "/nix/store/xmcmjq012h0pv1p1la9lwi7pagq20335-dasel-2.8.1.drv",
+      "description": "Query and update data structures from the command line",
+      "install_id": "dasel",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=42a1c966be226125b48c384171c44c651c236c22",
+      "name": "dasel-2.8.1",
+      "pname": "dasel",
+      "rev": "42a1c966be226125b48c384171c44c651c236c22",
+      "rev_count": 779115,
+      "rev_date": "2025-04-05T04:29:29Z",
+      "scrape_date": "2025-04-07T01:12:05.647053Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.8.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/9cfc6nr9d3cwqfznfh49m1pmyacndv9k-dasel-2.8.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "dasel",
+      "broken": false,
+      "derivation": "/nix/store/2brrn2c39641h8wji20zly9r6xgj0ics-dasel-2.8.1.drv",
+      "description": "Query and update data structures from the command line",
+      "install_id": "dasel",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=42a1c966be226125b48c384171c44c651c236c22",
+      "name": "dasel-2.8.1",
+      "pname": "dasel",
+      "rev": "42a1c966be226125b48c384171c44c651c236c22",
+      "rev_count": 779115,
+      "rev_date": "2025-04-05T04:29:29Z",
+      "scrape_date": "2025-04-07T01:30:43.560591Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.8.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/qj4nsngmacsnrwkh3zgdb7sg880njqjf-dasel-2.8.1"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "dasel",
+      "broken": false,
+      "derivation": "/nix/store/kma0s2hr6n1wnvsddxyvp0jqvsd2s203-dasel-2.8.1.drv",
+      "description": "Query and update data structures from the command line",
+      "install_id": "dasel",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=42a1c966be226125b48c384171c44c651c236c22",
+      "name": "dasel-2.8.1",
+      "pname": "dasel",
+      "rev": "42a1c966be226125b48c384171c44c651c236c22",
+      "rev_count": 779115,
+      "rev_date": "2025-04-05T04:29:29Z",
+      "scrape_date": "2025-04-07T01:47:14.584411Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.8.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/s4yx85lnl1849vc3zzv9c9bclqhq6cf6-dasel-2.8.1"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "dasel",
+      "broken": false,
+      "derivation": "/nix/store/2558fsyd607d736npxxnjax9r3c17794-dasel-2.8.1.drv",
+      "description": "Query and update data structures from the command line",
+      "install_id": "dasel",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=42a1c966be226125b48c384171c44c651c236c22",
+      "name": "dasel-2.8.1",
+      "pname": "dasel",
+      "rev": "42a1c966be226125b48c384171c44c651c236c22",
+      "rev_count": 779115,
+      "rev_date": "2025-04-05T04:29:29Z",
+      "scrape_date": "2025-04-07T02:06:54.845574Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.8.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/bjh2k3jjiz3fy93wkkwk2dj02j1n930b-dasel-2.8.1"
       },
       "system": "x86_64-linux",
       "group": "toplevel",

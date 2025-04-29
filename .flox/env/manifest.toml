@@ -2,6 +2,7 @@ version = 1
 
 [install]
 curl.pkg-path = "curl"
+dasel.pkg-path = "dasel"
 
 [vars]
 A="1"
