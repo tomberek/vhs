@@ -3,6 +3,9 @@ version = 1
 [install]
 curl.pkg-path = "curl"
 dasel.pkg-path = "dasel"
+"tomberek/eck".pkg-path = "tomberek/eck"
+"tomberek/eck".version = "0.0.3"
+"tomberek/eck".pkg-group = "tomberek/eck"
 
 [vars]
 A="1"
