@@ -31,3 +31,5 @@ EOF
 chmod +x $out/bin/eck
 '''
 
+[options]
+systems = ["x86_64-linux"]
