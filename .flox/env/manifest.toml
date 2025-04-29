@@ -19,7 +19,7 @@ alias l="ls -alh"
 
 [build]
 eck.description = "will echo things"
-eck.version = "0.0.2"
+eck.version = "0.0.3"
 eck.command = '''
 mkdir -p $out/bin
 cat > $out/bin/eck <<'EOF'

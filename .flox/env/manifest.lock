@@ -23,7 +23,7 @@
     "build": {
       "eck": {
         "command": "mkdir -p $out/bin\ncat > $out/bin/eck <<'EOF'\n#!/usr/bin/env bash\necho \"$@\"\necho RANDOM TOOL USED BY THE OPS FOLKS\ncurl --version\nEOF\nchmod +x $out/bin/eck\n",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "description": "will echo things"
       }
     }
