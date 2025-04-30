@@ -6,9 +6,6 @@
       "curl": {
         "pkg-path": "curl"
       },
-      "dasel": {
-        "pkg-path": "dasel"
-      },
       "tomberek/eck": {
         "pkg-path": "tomberek/eck",
         "pkg-group": "tomberek/eck",
@@ -38,6 +35,33 @@
     }
   },
   "packages": [
+    {
+      "attr_path": "eck",
+      "broken": false,
+      "derivation": "/nix/store/3vxf3djkdb4xs4ahmjp83spcny1fj8ay-eck-0.0.3.drv",
+      "description": "will echo things",
+      "install_id": "tomberek/eck",
+      "locked_url": "git@github.com:tomberek/vhs?rev=91acc64b1038637bb551559ead754e5b0b76e90e",
+      "name": "eck-0.0.3",
+      "pname": "eck",
+      "rev": "91acc64b1038637bb551559ead754e5b0b76e90e",
+      "rev_count": 708,
+      "rev_date": "2025-04-29T03:19:06Z",
+      "scrape_date": "2025-04-29T04:01:12.056892983Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "version": "0.0.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/1dmgshpzxqgy3nf4g22w8z3g7kvfz2nl-eck-0.0.3"
+      },
+      "system": "x86_64-linux",
+      "group": "tomberek/eck",
+      "priority": 5
+    },
     {
       "attr_path": "curl",
       "broken": false,
@@ -71,62 +95,6 @@
       },
       "system": "x86_64-linux",
       "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "dasel",
-      "broken": false,
-      "derivation": "/nix/store/2558fsyd607d736npxxnjax9r3c17794-dasel-2.8.1.drv",
-      "description": "Query and update data structures from the command line",
-      "install_id": "dasel",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=42a1c966be226125b48c384171c44c651c236c22",
-      "name": "dasel-2.8.1",
-      "pname": "dasel",
-      "rev": "42a1c966be226125b48c384171c44c651c236c22",
-      "rev_count": 779115,
-      "rev_date": "2025-04-05T04:29:29Z",
-      "scrape_date": "2025-04-07T02:06:54.845574Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2.8.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/bjh2k3jjiz3fy93wkkwk2dj02j1n930b-dasel-2.8.1"
-      },
-      "system": "x86_64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "eck",
-      "broken": false,
-      "derivation": "/nix/store/3vxf3djkdb4xs4ahmjp83spcny1fj8ay-eck-0.0.3.drv",
-      "description": "will echo things",
-      "install_id": "tomberek/eck",
-      "locked_url": "git@github.com:tomberek/vhs?rev=91acc64b1038637bb551559ead754e5b0b76e90e",
-      "name": "eck-0.0.3",
-      "pname": "eck",
-      "rev": "91acc64b1038637bb551559ead754e5b0b76e90e",
-      "rev_count": 708,
-      "rev_date": "2025-04-29T03:19:06Z",
-      "scrape_date": "2025-04-29T04:01:12.056892983Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "version": "0.0.3",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/1dmgshpzxqgy3nf4g22w8z3g7kvfz2nl-eck-0.0.3"
-      },
-      "system": "x86_64-linux",
-      "group": "tomberek/eck",
       "priority": 5
     }
   ]
