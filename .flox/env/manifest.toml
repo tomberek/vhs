@@ -2,6 +2,7 @@ version = 1
 
 [install]
 curl.pkg-path = "curl"
+awscli2.pkg-path = "awscli2"
 
 [vars]
 A="1"

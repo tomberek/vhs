@@ -3,6 +3,9 @@
   "manifest": {
     "version": 1,
     "install": {
+      "awscli2": {
+        "pkg-path": "awscli2"
+      },
       "curl": {
         "pkg-path": "curl"
       }
@@ -30,6 +33,36 @@
     }
   },
   "packages": [
+    {
+      "attr_path": "awscli2",
+      "broken": false,
+      "derivation": "/nix/store/kpydn25ym1b95jspwi2hkf0js2whnqz0-awscli2-2.25.5.drv",
+      "description": "Unified tool to manage your AWS services",
+      "install_id": "awscli2",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=42a1c966be226125b48c384171c44c651c236c22",
+      "name": "awscli2-2.25.5",
+      "pname": "awscli2",
+      "rev": "42a1c966be226125b48c384171c44c651c236c22",
+      "rev_count": 779115,
+      "rev_date": "2025-04-05T04:29:29Z",
+      "scrape_date": "2025-04-07T02:06:54.303093Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.25.5",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/rj3lsyfi7ds471vdbyrp10w7hbai2n2j-awscli2-2.25.5-dist",
+        "out": "/nix/store/vl4999jj1anfcd7d1pyhj83sgn4i1b8i-awscli2-2.25.5"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
     {
       "attr_path": "curl",
       "broken": false,
