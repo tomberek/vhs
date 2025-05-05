@@ -8,6 +8,9 @@
       },
       "curl": {
         "pkg-path": "curl"
+      },
+      "hello": {
+        "pkg-path": "hello"
       }
     },
     "vars": {
@@ -29,6 +32,12 @@
         "command": "mkdir -p $out/bin\ncat > $out/bin/eck <<'EOF'\n#!/usr/bin/env bash\necho \"$@\"\necho RANDOM TOOL USED BY THE OPS FOLKS\ncurl --version\nEOF\nchmod +x $out/bin/eck\n",
         "version": "0.0.3",
         "description": "will echo things"
+      },
+      "hello": {
+        "command": "mkdir -p $out/bin\necho \"hello world\" > $out/bin/hello-go\nchmod +x $out/bin/hello-go\n",
+        "runtime-packages": [
+          "hello"
+        ]
       }
     }
   },
@@ -93,6 +102,35 @@
         "devdoc": "/nix/store/ynv5wahwnghzk8v4zfbk8rmdn96cx4cf-curl-8.12.1-devdoc",
         "man": "/nix/store/03skkhbdzmivfr8c99rqbb9s5clfi0sy-curl-8.12.1-man",
         "out": "/nix/store/l6hzv5ms9fi7mx2j3xh0i42anyjcgpp8-curl-8.12.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "hello",
+      "broken": false,
+      "derivation": "/nix/store/wx45r069h9fcnbq7i4w0bmxciap0zihc-hello-2.12.1.drv",
+      "description": "Program that produces a familiar, friendly greeting",
+      "install_id": "hello",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=42a1c966be226125b48c384171c44c651c236c22",
+      "name": "hello-2.12.1",
+      "pname": "hello",
+      "rev": "42a1c966be226125b48c384171c44c651c236c22",
+      "rev_count": 779115,
+      "rev_date": "2025-04-05T04:29:29Z",
+      "scrape_date": "2025-04-07T02:06:56.497283Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.12.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/y4qpcibkj767szhjb58i2sidmz8m24hb-hello-2.12.1"
       },
       "system": "x86_64-linux",
       "group": "toplevel",

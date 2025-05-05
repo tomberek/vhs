@@ -2,6 +2,7 @@ version = 1
 
 [install]
 curl.pkg-path = "curl"
+hello.pkg-path = "hello"
 awscli2.pkg-path = "awscli2"
 
 [vars]
@@ -30,6 +31,14 @@ curl --version
 EOF
 chmod +x $out/bin/eck
 '''
+
+[build.hello]
+command = '''
+mkdir -p $out/bin
+echo "hello world" > $out/bin/hello-go
+chmod +x $out/bin/hello-go
+'''
+runtime-packages = ["hello"]
 
 [options]
 systems = ["x86_64-linux"]
